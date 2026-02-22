@@ -1,0 +1,209 @@
+# English translations for PROJECT.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-02-13 19:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+### ERRORS
+
+msgid "errors/flood"
+msgstr "Don't rush."
+
+msgid "errors/not_your_button"
+msgstr "This button isn't for you."
+
+
+### TYPES
+
+msgid "types/license"
+msgstr "License"
+
+msgid "types/gpu"
+msgstr "GPU"
+
+msgid "types/none"
+msgstr "Unknown"
+
+
+
+### START 
+
+msgid "start/welcome"
+msgstr "Welcome to Cryolvix, <b>{name}</b>!"
+
+msgid "start/buttons/commands"
+msgstr "Commands"
+
+
+
+### BALANCE 
+
+msgid "balance/title"
+msgstr "<b>Your balance</b>"
+
+msgid "balance/money"
+msgstr "<b>Money:</b> <code>{money}$</code>"
+
+msgid "balance/crypto"
+msgstr "<b>CryoCoins:</b> <code>{crypto}₡</code>"
+
+msgid "balance/footer"
+msgstr "<b>Earn more with /farming!</b>"
+
+msgid "balance/full"
+msgstr "Full balance"
+
+msgid "balance/callback/money"
+msgstr "Money: {money}$"
+
+msgid "balance/callback/crypto"
+msgstr "CryoCoins: {crypto}₡"
+
+
+
+### RATE 
+
+msgid "rate/title"
+msgstr "<b>CryoCoin Rate</b>"
+
+msgid "rate/currency"
+msgstr "<code>1₡</code> ≈ <code>{rate}$</code>"
+
+msgid "rate/footer"
+msgstr "<b>Note:</b> <i>The exchange rate is updated in real time depending on the exchange operations.</i>"
+
+
+
+### PING 
+ 
+msgid "ping/start"
+msgstr "<b>Pinging...</b>"
+
+msgid "ping/pong"
+msgstr "<b>PONG!</b>"
+
+msgid "ping/delay"
+msgstr "<b>Delay:</b> {ms} ms."
+
+
+
+### FARMING 
+
+msgid "farming/title"
+msgstr "<b>Your mining farm</b>"
+
+msgid "farming/income"
+msgstr "<b>Income:</b> <code>{income}₡</code>"
+
+msgid "farming/license"
+msgstr "<b>License:</b> {license}"
+
+msgid "farming/gpus"
+msgstr "<b>GPUs:</b> <code>{gpus} pcs.</code>"
+
+msgid "farming/multiplier"
+msgstr "<b>Multiplier:</b> <code>{multiplier}x</code>"
+
+msgid "farming/footer"
+msgstr "<b>You can exchange cryptocurrency in /market!</b>"
+
+msgid "farming/already"
+msgstr "You have already collected the income.
+
+msgid "farming/remaining"
+msgstr "Try again in <i>{remaining}</i>"
+
+msgid "farming/update"
+msgstr "<b>You can reduce the cooldown by purchasing a new license in /shop!</b>"
+
+
+
+### PROFILE
+
+msgid "profile/title"
+msgstr "<b>Player's profile</b>"
+
+msgid "profile/name"
+msgstr "<b>Name:</b> {name}"
+
+msgid "profile/id"
+msgstr "<b>ID:</b> <code>{id}</code>"
+
+
+
+### PRODUCT
+
+msgid "product/title"
+msgstr "<b>Product information</b>"
+
+msgid "product/name"
+msgstr "<b>Title:</b> {title}"
+
+msgid "product/type"
+msgstr "<b>Type:</b> <i>{type}</i>"
+
+msgid "product/license/limit"
+msgstr "<b>GPU limit:</b> <code>{limit} pcs.</code>"
+
+msgid "product/license/cooldown"
+msgstr "<b>Cooldown:</b> <code>{cooldown}</code>"
+
+msgid "product/multiplier"
+msgstr "<b>Multiplier:</b> <code>{multiplier}x</code>"
+
+msgid "product/price"
+msgstr "<b>Price:</b> <code>{price}$</code>"
+
+msgid "product/no_money"
+msgstr "Not enough money."
+
+msgid "product/not_found"
+msgstr "Product nor found."    
+
+msgid "product/license/lower"
+msgstr "You have better license!"
+
+msgid "product/buy"
+msgstr "Buy"
+
+msgid "product/back"
+msgstr "Back"
+
+msgid "product/license/success"
+msgstr "The {title} license was successfully purchased for {price}$!"
+
+msgid "product/gpu/success"
+msgstr "The {title} GPU was successfully purchased for {price}$!"
+
+
+
+### SHOP 
+
+msgid "shop/title"
+msgstr "<b>Shop</b>"
+
+msgid "shop/available"
+msgstr "<b>Available products</b>"
+
+msgid "shop/gpus"
+msgstr "<b>GPUs:</b> <code>{gpus}</code>"
+
+msgid "shop/licenses"
+msgstr "<b>Licenses:</b> <code>{licenses}</code>"
+
+msgid "shop/footer"
+msgstr "<b>Choose a product below</b>"

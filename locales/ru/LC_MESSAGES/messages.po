@@ -1,0 +1,214 @@
+# Russian translations for PROJECT.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-02-13 19:51+0100\n"
+"PO-Revision-Date: 2026-02-13 19:51+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+### ERRORS
+
+msgid "errors/flood"
+msgstr "Не спешите."
+
+msgid "errors/not_your_button"
+msgstr "Эта кнопка не для вас."
+
+
+
+### TYPES
+
+msgid "types/license"
+msgstr "Лицензия"
+
+msgid "types/gpu"
+msgstr "Видеокарта"
+
+msgid "types/none"
+msgstr "Неизвестно"
+
+
+
+### START
+
+msgid "start/welcome"
+msgstr "Добро пожаловать в Cryolvix, <b>{name}</b>!"
+
+msgid "start/buttons/commands"
+msgstr "Команды"
+
+
+
+### BALANCE 
+
+msgid "balance/title"
+msgstr "<b>Ваш баланс</b>"
+
+msgid "balance/money"
+msgstr "<b>Деньги:</b> <code>{money}$</code>"
+
+msgid "balance/crypto"
+msgstr "<b>КриоКоины:</b> <code>{crypto}₡</code>"
+
+msgid "balance/footer"
+msgstr "<b>Заработайте больше с /farming!</b>"
+
+msgid "balance/full"
+msgstr "Весь баланс"
+
+msgid "balance/callback/money"
+msgstr "Деньги: {money}$"
+
+msgid "balance/callback/crypto"
+msgstr "КриоКоины: {crypto}₡"
+
+
+
+### RATE 
+
+msgid "rate/title"
+msgstr "<b>Курс КриоКоина</b>"
+
+msgid "rate/currency"
+msgstr "<code>1₡</code> ≈ <code>{rate}$</code>"
+
+msgid "rate/footer"
+msgstr "<b>Примечание:</b> Курс обновляется в реальном времени в зависимости от обменных операций."
+
+
+
+### PING 
+ 
+msgid "ping/start"
+msgstr "<b>Пинг...</b>"
+
+msgid "ping/pong"
+msgstr "<b>ПОНГ!</b>"
+
+msgid "ping/delay"
+msgstr "<b>Задержка:</b> {ms} мс."
+
+
+
+### FARMING 
+
+msgid "farming/title"
+msgstr "<b>Ваша майнинг ферма</b>"
+
+msgid "farming/income"
+msgstr "<b>Доход:</b> <code>{income}₡</code>"
+
+msgid "farming/license"
+msgstr "<b>Лицензия:</b> <i>{license}</i>"
+
+msgid "farming/gpus"
+msgstr "<b>Видеокарты:</b> <code>{gpus} шт.</code>"
+
+msgid "farming/multiplier"
+msgstr "<b>Множитель:</b> <code>{multiplier}x</code>"
+
+msgid "farming/footer"
+msgstr "<b>Вы можете обменять криптовалюту в /market!</b>"
+
+msgid "farming/already"
+msgstr "Вы уже собирали доход.
+
+msgid "farming/remaining"
+msgstr "Попробуйте через <i>{remaining}</i>"
+
+msgid "farming/update"
+msgstr "<b>Вы можете снизить время ожидания, купив новую лицензию в /shop!</b>"
+
+
+
+### PROFILE
+
+msgid "profile/title"
+msgstr "<b>Профиль игрока</b>"
+
+msgid "profile/name"
+msgstr "<b>Имя:</b> {name}"
+
+msgid "profile/id"
+msgstr "<b>ID:</b> <code>{id}</code>"
+
+
+
+### PRODUCT
+
+msgid "product/title"
+msgstr "<b>Информация о товаре</b>"
+
+msgid "product/name"
+msgstr "<b>Название:</b> {title}"
+
+msgid "product/type"
+msgstr "<b>Тип:</b> <i>{type}</i>"
+
+msgid "product/license/limit"
+msgstr "<b>Лимит видеокарт:</b> <code>{limit} шт.</code>"
+
+msgid "product/license/cooldown"
+msgstr "<b>Время ожидания:</b> <code>{cooldown}</code>"
+
+msgid "product/multiplier"
+msgstr "<b>Множитель:</b> <code>{multiplier}x</code>"
+
+msgid "product/price"
+msgstr "<b>Цена:</b> <code>{price}$</code>"
+
+msgid "product/no_money"
+msgstr "Недостаточно денег."
+
+msgid "product/not_found"
+msgstr "Товар не найден."    
+
+msgid "product/license/lower"
+msgstr "У Вас есть лицензия получше!"
+
+msgid "product/license/even"
+msgstr "У Вас уже есть эта лицензия!"
+
+msgid "product/buy"
+msgstr "Купить"
+
+msgid "product/back"
+msgstr "Назад"
+
+msgid "product/license/success"
+msgstr "Лицензия {title} успешно куплена за {price}$!"
+
+msgid "product/gpu/success"
+msgstr "Видеокарта {title} успешно куплена за {price}$!"
+
+
+
+### SHOP 
+
+msgid "shop/title"
+msgstr "<b>Магазин</b>"
+
+msgid "shop/available"
+msgstr "<b>Доступные товары</b>"
+
+msgid "shop/gpus"
+msgstr "<b>Видеокарты:</b> <code>{gpus}</code>"
+
+msgid "shop/licenses"
+msgstr "<b>Лицензии:</b> <code>{licenses}</code>"
+
+msgid "shop/footer"
+msgstr "<b>Выберите товар ниже</b>"
