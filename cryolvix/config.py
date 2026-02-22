@@ -99,6 +99,9 @@ class EMOJIS:
     UPDATE = TOP = PremiumEmoji(5319290036586296571, "🔝")
     BACK = PremiumEmoji(5316635411789931847, "◀️")
     SHOP = PremiumEmoji(6030561664758191905, "🛒")
+    MARKET = PremiumEmoji(5300848194341596510, "🪙")
+    INFO = PremiumEmoji(5258503720928288433, "ℹ️")
+    DASH = PremiumEmoji(5317059204802952215, "🖱️")
     
 class CustomInlineButton(InlineKeyboardButton):
     style: str | None = "primary"

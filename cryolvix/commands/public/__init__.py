@@ -5,3 +5,6 @@ from .ping import ping
 from .farming import farming
 from .profile import profile
 from .shop import shop
+from .market import market
+from .sell import sell
+from .buy import buy

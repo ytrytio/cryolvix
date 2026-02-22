@@ -29,3 +29,6 @@ router.message.register(public.ping, Command(commands=["ping"], **default_option
 router.message.register(public.farming, Command(commands=["farming", "farm", "mine"], **default_options))
 router.message.register(public.profile, Command(commands=["profile", "info"], **default_options))
 router.message.register(public.shop, Command(commands=["shop", "store"], **default_options))
+router.message.register(public.market, Command(commands=["market"], **default_options))
+router.message.register(public.sell, Command(commands=["sell"], **default_options))
+router.message.register(public.buy, Command(commands=["buy"], **default_options))

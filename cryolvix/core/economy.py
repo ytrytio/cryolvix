@@ -31,11 +31,15 @@ class Economy:
     @classmethod
     def add_farmed(cls, amount: float):
         cls._farmed_amount += amount
+        
+    @classmethod
+    def sub_farmed(cls, amount: float):
+        cls._farmed_amount -= amount
 
     @classmethod
     async def update_rate(cls, session_pool):
         course_change = cls._farmed_amount * 0.002
-        max_course_change = cls.current_rate * 0.02
+        max_course_change = cls.current_rate * 0.05
         course_change = min(max(course_change, -max_course_change), max_course_change)
 
         decay = cls.current_rate * 0.001 if cls._farmed_amount == 0 else 0

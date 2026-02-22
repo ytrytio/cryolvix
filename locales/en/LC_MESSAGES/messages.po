@@ -27,6 +27,14 @@ msgid "errors/not_your_button"
 msgstr "This button isn't for you."
 
 
+
+### HELP
+
+msgid "help/usage"
+msgstr "<b>Usage:</b>"
+
+
+
 ### TYPES
 
 msgid "types/license"
@@ -207,3 +215,31 @@ msgstr "<b>Licenses:</b> <code>{licenses}</code>"
 
 msgid "shop/footer"
 msgstr "<b>Choose a product below</b>"
+
+
+
+### MARKET 
+
+msgid "market/title"
+msgstr "<b>Cryptomarket</b>"
+
+msgid "market/body/title"
+msgstr "<b>Use commands below:</b>"
+
+msgid "market/body/c2m"
+msgstr "<code>/sell [amount]</code> for selling a quantity of CryoCoin"
+
+msgid "market/body/m2c"
+msgstr "<code>/buy  [amount]</code> for buying a quantity of CryoCoin"
+
+msgid "market/sold"
+msgstr "<b>Sold:</b> <code>{amount}₡</code>"
+
+msgid "market/got"
+msgstr "<b>Received:</b> <code>{amount}$</code>"
+
+msgid "market/bought"
+msgstr "<b>Bought:</b> <code>{amount}₡</code>"
+
+msgid "market/spent"
+msgstr "<b>Spent:</b> <code>{amount}$</code>"

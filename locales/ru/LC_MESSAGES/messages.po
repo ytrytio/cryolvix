@@ -29,6 +29,13 @@ msgstr "Эта кнопка не для вас."
 
 
 
+### HELP
+
+msgid "help/usage"
+msgstr "<b>Использование:</b>"
+
+
+
 ### TYPES
 
 msgid "types/license"
@@ -212,3 +219,31 @@ msgstr "<b>Лицензии:</b> <code>{licenses}</code>"
 
 msgid "shop/footer"
 msgstr "<b>Выберите товар ниже</b>"
+
+
+
+### MARKET 
+
+msgid "market/title"
+msgstr "<b>Крипторынок</b>"
+
+msgid "market/body/title"
+msgstr "<b>Используйте команды:</b>"
+
+msgid "market/body/c2m"
+msgstr "<code>/sell [кол-во ₡]</code> для продажи КриоКоина"
+
+msgid "market/body/m2c"
+msgstr "<code>/buy  [кол-во ₡]</code> для покупки КриоКоина"
+
+msgid "market/sold"
+msgstr "<b>Продано:</b> <code>{amount}₡</code>"
+
+msgid "market/got"
+msgstr "<b>Получено:</b> <code>{amount}$</code>"
+
+msgid "market/bought"
+msgstr "<b>Куплено:</b> <code>{amount}₡</code>"
+
+msgid "market/spent"
+msgstr "<b>Потрачено:</b> <code>{amount}$</code>"
