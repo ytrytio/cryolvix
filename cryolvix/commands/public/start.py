@@ -4,7 +4,7 @@ from aiogram.filters import CommandObject
 from aiogram.utils.deep_linking import decode_payload
 from aiogram.utils.i18n import gettext as i18n
 
-from cryolvix.config import EMOJIS, CustomInlineButton, CMDS_LINK
+from cryolvix.config import EMOJIS, CustomInlineButton, CMDS_LINK, SOURCE_CODE
 from cryolvix.core.userdata import UserData
 from cryolvix.core.product import Product
 
@@ -30,6 +30,13 @@ async def start(message: Message, user: UserData, command: CommandObject, **_):
                     text=i18n("start/buttons/commands"),
                     url=CMDS_LINK,
                     icon_custom_emoji_id=EMOJIS.FLYING.ID
+                )
+            ],
+            [
+                CustomInlineButton(
+                    text=i18n("start/buttons/source"),
+                    url=SOURCE_CODE,
+                    icon_custom_emoji_id=EMOJIS.GITHUB.ID
                 )
             ]
         ]

@@ -57,6 +57,9 @@ msgstr "Добро пожаловать в Cryolvix, <b>{name}</b>!"
 msgid "start/buttons/commands"
 msgstr "Команды"
 
+msgid "start/buttons/source"
+msgstr "Исходный код"
+
 
 
 ### BALANCE 

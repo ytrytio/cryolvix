@@ -103,7 +103,10 @@ class EMOJIS:
     INFO = PremiumEmoji(5258503720928288433, "ℹ️")
     DASH = PremiumEmoji(5317059204802952215, "🖱️")
     
+    GITHUB = PremiumEmoji(5314703247737376876, "😀")
+    
 class CustomInlineButton(InlineKeyboardButton):
     style: str | None = "primary"
 
 CMDS_LINK = "https://teletype.in/@cryolvix"
+SOURCE_CODE = "https://github.com/ytrytio/cryolvix"
