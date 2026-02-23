@@ -19,5 +19,5 @@ async def profile(message: Message, user: UserData, user_repo: UserRepository, *
         f"{EMOJIS.CRYOCOIN} {i18n("balance/crypto").format(crypto=format_num(target.cryocoins))}\n\n"
         f"{EMOJIS.CHIP} {i18n("farming/gpus").format(gpus=len(target.gpus))}\n"
         f"{user.license.emoji} {i18n("farming/license").format(license=target.license.title)}\n"
-        f"{EMOJIS.UP} {i18n("farming/multiplier").format(multiplier=target.hashrate + target.license.multiplier)}"
+        f"{EMOJIS.UP} {i18n("farming/multiplier").format(multiplier=target.hashrate * target.license.multiplier)}"
     )

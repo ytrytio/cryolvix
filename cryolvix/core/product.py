@@ -95,7 +95,7 @@ class Product:
             if user.money < self.product.price:
                 return i18n("product/no_money")
                 
-            user._license = index
+            user.license = self.product
             user.money -= self.product.price
             await user.update(user_repo)
             return i18n(f"product/{self.category}/success").format(title=self.product.title, price=format_num(self.product.price))

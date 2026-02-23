@@ -23,6 +23,9 @@ async def sell(message: Message, user: UserData, user_repo: UserRepository, comm
     try:
         crypto = float(args.strip())
         
+        if crypto < 0:
+            return await usage(message)
+        
         if user.cryocoins < crypto:
             money = Economy.crypto_to_bucks(user.cryocoins)
             crypto = user.cryocoins

@@ -50,6 +50,6 @@ async def farming(message: Message, user: UserData, user_repo: UserRepository, *
         f"{EMOJIS.BALANCE} {i18n("farming/income").format(income=format_num(farmed))}\n"
         f"{user.license.emoji} {i18n("farming/license").format(license=user.license.title)}\n"
         f"{EMOJIS.CHIP} {i18n("farming/gpus").format(gpus=len(user.gpus))}\n"
-        f"{EMOJIS.UP} {i18n("farming/multiplier").format(multiplier=user.hashrate + user.license.multiplier)}\n\n"
+        f"{EMOJIS.UP} {i18n("farming/multiplier").format(multiplier=user.hashrate * user.license.multiplier)}\n\n"
         f"{EMOJIS.EXCHANGE} {i18n("farming/footer")}"
     )

@@ -24,6 +24,9 @@ async def buy(message: Message, user: UserData, user_repo: UserRepository, comma
         crypto = float(args.strip())
         money = Economy.crypto_to_bucks(crypto)
         
+        if crypto < 0 or money < 0:
+            return await usage(message)
+        
         if user.money < money:
             result = Economy.bucks_to_crypto(user.money)
             money = user.money
