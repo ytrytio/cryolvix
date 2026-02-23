@@ -7,9 +7,7 @@ from cachetools import TTLCache
 from typing import Any, Awaitable, Callable, Dict, Optional
 from random import choice
 
-from cryolvix.database.repositories.user_repo import UserRepository
-from cryolvix.database.repositories.gpu_repo import GPURepository
-from cryolvix.database.repositories.product_repo import ProductRepository
+from cryolvix.database.repositories import UserRepository, GPURepository, ProductRepository, GlobalRepository
 from cryolvix.core.userdata import UserData
 
 class DBSessionMiddleware(BaseMiddleware):
@@ -31,10 +29,12 @@ class DBSessionMiddleware(BaseMiddleware):
             gpu_repo = GPURepository(session)
             product_repo = ProductRepository(session)
             user_repo = UserRepository(session)
+            global_repo = GlobalRepository(session)
             
             data["gpu_repo"] = gpu_repo
             data["product_repo"] = product_repo
             data["user_repo"] = user_repo
+            data["global_repo"] = global_repo
 
             if user_from_event and not user_from_event.is_bot:
                 user_data = await UserData.create_or_load(user_from_event, user_repo)

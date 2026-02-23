@@ -103,6 +103,8 @@ class Product:
         elif isinstance(self.product, GPUModel):
             if user.money < self.product.price:
                 return i18n("product/no_money")
+            if user.license.limit <= len(user.gpus):
+                return i18n(f"product/gpu/limit")
             if not gpu_repo:
                 return i18n("product/not_found")
                 

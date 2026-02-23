@@ -105,6 +105,22 @@ class EMOJIS:
     
     GITHUB = PremiumEmoji(5314703247737376876, "😀")
     
+    NUMBERS = [
+        PremiumEmoji(6035242302937503656, "0️⃣"),
+        PremiumEmoji(6032708078959336473, "1️⃣"),
+        PremiumEmoji(6035384337505982633, "2️⃣"),
+        PremiumEmoji(6035126111187245440, "3️⃣"),
+        PremiumEmoji(6035008858580064111, "4️⃣"),
+        PremiumEmoji(6035163722215855841, "5️⃣"),
+        PremiumEmoji(6035238415992101926, "6️⃣"),
+        PremiumEmoji(6033106518780419015, "7️⃣"),
+        PremiumEmoji(6035012324618671950, "8️⃣"),
+        PremiumEmoji(6033085868577659810, "9️⃣"),
+        PremiumEmoji(6035261763434322126, "🔟")
+    ]
+    
+    STATS = PremiumEmoji(5208846279714560254, "📊")
+    
 class CustomInlineButton(InlineKeyboardButton):
     style: str | None = "primary"
 

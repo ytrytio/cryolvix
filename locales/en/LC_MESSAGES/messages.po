@@ -200,6 +200,9 @@ msgstr "The {title} license was successfully purchased for {price}$!"
 msgid "product/gpu/success"
 msgstr "The {title} GPU was successfully purchased for {price}$!"
 
+msgid "product/gpu/limit"
+msgstr "You have reached the limit of available GPUs!\nTry upgrading your license to increase the limit."
+
 
 
 ### SHOP 
@@ -246,3 +249,19 @@ msgstr "<b>Bought:</b> <code>{amount}₡</code>"
 
 msgid "market/spent"
 msgstr "<b>Spent:</b> <code>{amount}$</code>"
+
+
+
+### TOP
+
+msgid "top/title"
+msgstr "<b>TOP-10 Players</b>"
+
+msgid "top/money"
+msgstr "<b>Filter:</b> <i>Money ($)</i>"
+
+msgid "top/crypto"
+msgstr "<b>Filter:</b> <i>CryoCoins (₡)</i>"
+
+msgid "top/footer"
+msgstr "<b>Below are the TOP-players</b>"

@@ -32,3 +32,5 @@ router.message.register(public.shop, Command(commands=["shop", "store"], **defau
 router.message.register(public.market, Command(commands=["market"], **default_options))
 router.message.register(public.sell, Command(commands=["sell"], **default_options))
 router.message.register(public.buy, Command(commands=["buy"], **default_options))
+router.message.register(public.money_top, Command(commands=["mtop"], **default_options))
+router.message.register(public.crypto_top, Command(commands=["ctop"], **default_options))

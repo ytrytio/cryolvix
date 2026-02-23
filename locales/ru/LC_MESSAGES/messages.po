@@ -204,6 +204,9 @@ msgstr "Лицензия {title} успешно куплена за {price}$!"
 msgid "product/gpu/success"
 msgstr "Видеокарта {title} успешно куплена за {price}$!"
 
+msgid "product/gpu/limit"
+msgstr "Вы достигли лимита доступных видеокарт!\nПопробуйте улучшить лицензию для увеличения лимита."
+
 
 
 ### SHOP 
@@ -250,3 +253,19 @@ msgstr "<b>Куплено:</b> <code>{amount}₡</code>"
 
 msgid "market/spent"
 msgstr "<b>Потрачено:</b> <code>{amount}$</code>"
+
+
+
+### TOP
+
+msgid "top/title"
+msgstr "<b>ТОП-10 игроков</b>"
+
+msgid "top/money"
+msgstr "<b>Фильтр:</b> <i>Деньги ($)</i>"
+
+msgid "top/crypto"
+msgstr "<b>Фильтр:</b> <i>КриоКоины (₡)</i>"
+
+msgid "top/footer"
+msgstr "<b>Ниже показаны ТОП-игроки</b>"
