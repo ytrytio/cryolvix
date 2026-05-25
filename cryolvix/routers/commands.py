@@ -34,3 +34,5 @@ router.message.register(public.sell, Command(commands=["sell"], **default_option
 router.message.register(public.buy, Command(commands=["buy"], **default_options))
 router.message.register(public.money_top, Command(commands=["mtop"], **default_options))
 router.message.register(public.crypto_top, Command(commands=["ctop"], **default_options))
+router.message.register(public.give, Command(commands=["give"], **default_options))
+router.message.register(public.gpus, Command(commands=["gpus"], **default_options))

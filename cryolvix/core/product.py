@@ -4,7 +4,7 @@ from aiogram.utils.i18n import gettext as i18n
 from typing import Optional, Any
 
 from cryolvix.core.userdata import UserData
-from cryolvix.database.repositories.user_repo import UserRepository    
+from cryolvix.database.repositories import GPURepository, UserRepository, ProductRepository
 from cryolvix.config import EMOJIS, CustomInlineButton
 from cryolvix.utils.utils import format_num, format_time
 from .license import License, LICENSES, NoLicense
@@ -42,8 +42,7 @@ class Product:
         except: pass
         finally: return product
         
-    @property
-    def keyboard(self) -> InlineKeyboardMarkup:
+    def custom_keyboard(self, back_callback: str = "shop") -> InlineKeyboardMarkup:
         return InlineKeyboardMarkup(
             inline_keyboard=[
                 [
@@ -56,12 +55,16 @@ class Product:
                 [
                     CustomInlineButton(
                         text=i18n("product/back"), 
-                        callback_data="shop",
+                        callback_data=back_callback,
                         icon_custom_emoji_id=EMOJIS.BACK.ID
                     )
                 ],
             ]
         )
+    
+    @property
+    def keyboard(self) -> InlineKeyboardMarkup:
+        return self.custom_keyboard()
     
     @property
     def category(self) -> Optional[str]:
@@ -84,7 +87,13 @@ class Product:
         text += f"{EMOJIS.PRICE} {i18n("product/price").format(price=format_num(self.product.price))}\n"
         return text
         
-    async def buy(self, user: "UserData", user_repo: "UserRepository", gpu_repo: Optional[Any] = None) -> str:
+    async def buy(
+        self, 
+        user: "UserData", 
+        user_repo: "UserRepository", 
+        gpu_repo: Optional["GPURepository"] = None, 
+        product_repo: Optional["ProductRepository"] = None
+    ) -> str:
         if isinstance(self.product, License) and isinstance(user.license, License):
             index = self.product.product_id[1]
             if user.license.product_id[1] > index:
@@ -105,8 +114,10 @@ class Product:
                 return i18n("product/no_money")
             if user.license.limit <= len(user.gpus):
                 return i18n(f"product/gpu/limit")
-            if not gpu_repo:
+            if not gpu_repo or not product_repo:
                 return i18n("product/not_found")
+            if self.product not in await product_repo.get_shop_items():
+                return i18n("product/not_available")
                 
             await gpu_repo.add_gpu(user_id=user.id, gpu_obj=self.product)
 

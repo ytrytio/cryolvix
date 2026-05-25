@@ -19,6 +19,7 @@ LOCALES = PROJECT_DIR / "locales"
 UPDATE_TIME = 120
 SUBSCRIPTION_TIME = MONTH = 2592000
 ADMINS = [1432248216]
+GPUS_KB_LIMIT = 10
 
 I18N = I18n(
     path=LOCALES,
@@ -120,6 +121,10 @@ class EMOJIS:
     ]
     
     STATS = PremiumEmoji(5208846279714560254, "📊")
+    REPLY = PremiumEmoji(5253911945622332753, "↖️")
+    TRANSACTION = PremiumEmoji(5300816746591054210, "📩")
+    STOP = PremiumEmoji(5255772095958229697, "🤚")
+    FIRE = FEE = PremiumEmoji(5208513917965328345, "🔥")
     
 class CustomInlineButton(InlineKeyboardButton):
     style: str | None = "primary"

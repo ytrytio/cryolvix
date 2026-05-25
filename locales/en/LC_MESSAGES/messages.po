@@ -26,12 +26,18 @@ msgstr "Don't rush."
 msgid "errors/not_your_button"
 msgstr "This button isn't for you."
 
+msgid "errors/unknown"
+msgstr "An unexpected error has occurred."
+
 
 
 ### HELP
 
 msgid "help/usage"
 msgstr "<b>Usage:</b>"
+
+msgid "help/reply"
+msgstr "<i>Should be written as a reply!</i>"
 
 
 
@@ -183,7 +189,10 @@ msgid "product/no_money"
 msgstr "Not enough money."
 
 msgid "product/not_found"
-msgstr "Product nor found."    
+msgstr "Product not found."
+
+msgid "product/not_available"
+msgstr "Product is not available."
 
 msgid "product/license/lower"
 msgstr "You have better license!"
@@ -233,10 +242,10 @@ msgid "market/body/title"
 msgstr "<b>Use commands below:</b>"
 
 msgid "market/body/c2m"
-msgstr "<code>/sell [amount]</code> for selling a quantity of CryoCoin"
+msgstr "<code>/sell [amount ₡]</code> for selling a quantity of CryoCoin"
 
 msgid "market/body/m2c"
-msgstr "<code>/buy  [amount]</code> for buying a quantity of CryoCoin"
+msgstr "<code>/buy  [amount ₡]</code> for buying a quantity of CryoCoin"
 
 msgid "market/sold"
 msgstr "<b>Sold:</b> <code>{amount}₡</code>"
@@ -265,3 +274,58 @@ msgstr "<b>Filter:</b> <i>CryoCoins (₡)</i>"
 
 msgid "top/footer"
 msgstr "<b>Below are the TOP-players</b>"
+
+
+
+### GIVE
+
+msgid "give/title"
+msgstr "<b>Transaction</b>"
+
+msgid "give/sender"
+msgstr "<b>Sender:</b> {name}"
+
+msgid "give/amount"
+msgstr "<b>Amount:</b> <code>{amount}₡</code>"
+
+msgid "give/receiver"
+msgstr "<b>Receiver:</b> {name}"
+
+msgid "give/usage"
+msgstr "<code>/give [amount ₡]</code> for transferring CryoCoins"
+
+msgid "give/success"
+msgstr "<i>Success!</i>"
+
+msgid "give/self"
+msgstr "<i>Cannot transfer to oneself.</i>"
+
+msgid "give/noargs"
+msgstr "<i>Missing an amount to send.</i>"
+
+msgid "give/not_enough"
+msgstr "<i>Not enough CryoCoins.</i>"
+
+msgid "give/fee"
+msgstr "<b>Fee:</b> <code>{fee}₡</code>"
+
+
+### GPUS 
+
+msgid "gpus/title"
+msgstr "<b>Your GPUs</b>"
+
+msgid "gpus/footer/nogpu"
+msgstr "<b>Buy more GPUs below</b>"
+
+msgid "gpus/footer/hasgpu"
+msgstr "<b>Choose a GPU below</b>"
+
+
+### PAGES
+
+msgid "pages/next"
+msgstr "Next"
+
+msgid "pages/back"
+msgstr "Prev."

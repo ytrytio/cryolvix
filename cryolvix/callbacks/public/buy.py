@@ -10,6 +10,7 @@ async def buy(
     user: UserData, 
     user_repo: UserRepository,
     gpu_repo: GPURepository,
+    product_repo: ProductRepository,
     **_
 ):
     if (
@@ -25,7 +26,8 @@ async def buy(
         result = await product.buy(
             user=user, 
             user_repo=user_repo, 
-            gpu_repo=gpu_repo
+            gpu_repo=gpu_repo,
+            product_repo=product_repo
         )
     else: 
         result = i18n("product/not_found")

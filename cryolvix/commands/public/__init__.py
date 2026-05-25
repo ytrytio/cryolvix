@@ -9,3 +9,5 @@ from .market import market
 from .sell import sell
 from .buy import buy
 from .top import money_top, crypto_top
+from .give import give
+from .gpus import gpus

@@ -1,9 +1,12 @@
+from aiogram import Bot
 from aiogram.types import User as TelegramUser
 from html import escape as html_escape
 from typing import Optional
 from datetime import datetime
 from decimal import Decimal
 from time import time as unixtime
+
+from aiogram.utils.deep_linking import create_start_link
 
 from cryolvix.config import SUBSCRIPTION_TIME
 from cryolvix.core.license import License, NoLicense, LICENSES
@@ -100,3 +103,12 @@ class UserData:
         if self.username:
             return f'<a href="https://t.me/{self.username}">{self.name}</a>'
         return f'<a href="tg://user?id={self.id}">{self.name}</a>'
+        
+    @property
+    def shortlink(self) -> str:
+        if self.username:
+            return f'<a href="https://t.me/{self.username}">{self.name[:15]}...</a>'
+        return f'<a href="tg://user?id={self.id}">{self.name[:15]}{"..." if len(self.name) > 15 else ""}</a>'
+
+    async def start_link(self, bot: Bot) -> str:
+        return await create_start_link(bot, f"profile:{self.id}", True)

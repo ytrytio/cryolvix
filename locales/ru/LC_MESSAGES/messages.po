@@ -27,12 +27,18 @@ msgstr "Не спешите."
 msgid "errors/not_your_button"
 msgstr "Эта кнопка не для вас."
 
+msgid "errors/unknown"
+msgstr "Произошла неожиданная ошибка."
+
 
 
 ### HELP
 
 msgid "help/usage"
 msgstr "<b>Использование:</b>"
+
+msgid "help/reply"
+msgstr "<i>Должно быть написано ответом!</i>"
 
 
 
@@ -184,7 +190,10 @@ msgid "product/no_money"
 msgstr "Недостаточно денег."
 
 msgid "product/not_found"
-msgstr "Товар не найден."    
+msgstr "Товар не найден."
+
+msgid "product/not_available"
+msgstr "Товар недоступен."   
 
 msgid "product/license/lower"
 msgstr "У Вас есть лицензия получше!"
@@ -269,3 +278,58 @@ msgstr "<b>Фильтр:</b> <i>КриоКоины (₡)</i>"
 
 msgid "top/footer"
 msgstr "<b>Ниже показаны ТОП-игроки</b>"
+
+
+
+### GIVE
+
+msgid "give/title"
+msgstr "<b>Транзакция</b>"
+
+msgid "give/sender"
+msgstr "<b>Отправитель:</b> {name}"
+
+msgid "give/amount"
+msgstr "<b>Сумма:</b> <code>{amount}₡</code>"
+
+msgid "give/receiver"
+msgstr "<b>Получатель:</b> {name}"
+
+msgid "give/usage"
+msgstr "<code>/give [кол-во ₡]</code> для передачи КриоКоинов"
+
+msgid "give/success"
+msgstr "<i>Успешно!</i>"
+
+msgid "give/self"
+msgstr "<i>Нельзя передать самому себе.</i>"
+
+msgid "give/noargs"
+msgstr "<i>Отсутствует сумма для передачи.</i>"
+
+msgid "give/not_enough"
+msgstr "<i>Недостаточно КриоКоинов.</i>"
+
+msgid "give/fee"
+msgstr "<b>Комиссия:</b> <code>{fee}₡</code>"
+
+
+### GPUS 
+
+msgid "gpus/title"
+msgstr "<b>Ваши видеокарты</b>"
+
+msgid "gpus/footer/nogpu"
+msgstr "<b>Купите видеокарты ниже</b>"
+
+msgid "gpus/footer/hasgpu"
+msgstr "<b>Выберите видеокарту ниже</b>"
+
+
+### PAGES
+
+msgid "pages/next"
+msgstr "След."
+
+msgid "pages/back"
+msgstr "Пред."

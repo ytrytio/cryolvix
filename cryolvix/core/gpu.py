@@ -2,6 +2,14 @@ from dataclasses import dataclass, field
 from random import randint
 from typing_extensions import Optional
 
+def get_model(company: str, prefix: str, series: int, level: int, suffix: str) -> str:
+    model = (
+        f"{company} {prefix} {series}{level}0{'0' if series >= 6 else ''}{suffix}".strip()
+        if company.lower() == "gnd" else
+        f"{company} {prefix} {series}0{level}0{suffix}".strip() 
+    )
+    return model
+
 @dataclass(kw_only=True)
 class GPUModel:
     model: str
